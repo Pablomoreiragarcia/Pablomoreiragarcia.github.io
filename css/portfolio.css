@@ -1,0 +1,276 @@
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  a{
+    color: rgb(173, 236, 255);
+  }
+
+  a:hover {
+    color: #2b1818;
+  }
+
+  .text-primary {
+    color: rgb(103, 220, 255) !important;
+  }
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* PARTICLE.JS CSS
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  #particles-js{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* MAIN NAV BAR
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  #mainNav {
+    background-color: white;
+  }
+  
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #67dcff;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  /* Color of 'from data to viz' on the top left */
+  #mainNav .navbar-brand {
+    color: #67dcff;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  }
+  
+  #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #251667;
+  }
+  
+  /* Color of the TEXT of the menu top right*/
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: black;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+  }
+  
+  #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #67dcff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid #67dcff;
+  }
+  
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+      -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+      transition: padding-top 0.3s, padding-bottom 0.3s;
+      background-color: transparent;
+    }
+
+    #mainNav .navbar-collapse{
+      text-align: center;
+    }
+
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: white;
+    }
+  
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+      padding: 12px 0;
+    }
+  }
+
+
+
+
+
+
+
+  .masthead {
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead .inicio_social-buttons {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Alinea los íconos en el centro */
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item {
+    display: inline-block; /* Muestra los íconos en línea */
+    margin: 0 10px; /* Añade un espacio entre los íconos */
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item .circle {
+    display: inline-block;
+    width: 40px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 30px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item .circle .fa {
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .text {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    max-width: 600px;
+    padding: 2em 3em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact_text-container {
+    overflow: hidden; /* Evita que el texto se desborde del contenedor */
+    text-align: center; /* Centra el texto */
+    max-width: 400px; /* Establece el ancho máximo del texto */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+  .contact_social-buttons {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Alinea los íconos en el centro */
+    position: relative;
+    z-index: 99;
+  }
+  .contact_social-buttons_item {
+    display: inline-block; /* Muestra los íconos en línea */
+    margin: 0 10px; /* Añade un espacio entre los íconos */
+    position: relative;
+    z-index: 99;
+  }
+
+  .circle {
+    display: inline-block;
+    width: 40px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 27px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+    position: relative;
+    z-index: 99;
+  }
+
+  .circle:hover {
+    background-color: rgb(103, 220, 255); /* Cambia el color de fondo al pasar el ratón */
+    position: relative;
+    z-index: 99;
+  }
+
+  .fa {
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    transition: color 0.3s; /* Transición suave del color del ícono */
+    position: relative;
+    z-index: 99;
+  }
+
+  .circle:hover .fa {
+    color: #000000; /* Cambia el color del ícono al pasar el ratón sobre el círculo */
+    position: relative;
+    z-index: 99;
+  }
+
+
+  footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
