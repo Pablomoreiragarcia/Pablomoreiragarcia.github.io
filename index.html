@@ -151,33 +151,32 @@
       <br><br>
 
       <ul class="row_curriculum">
-
-        <li class="row_curriculum_item" id="openModalBtn">
-          <a data-toggle="modal" href="#Studies">
+        <li class="row_curriculum_item openModalBtn">
+          <a data-toggle="modal_curriculum" href="#Studies">
               <div class="circle">
               <i class="fa fa-university"></i>
             </div>
           </a>
 
-          <a id="openStudiesModal" href="#Studies" data-toggle="modal">
+          <a data-toggle="modal" href="#Studies">
             <h4>Studies</h4>
           </a>
           <p></p>
         </li>
 
-        <li class="row_curriculum_item">
-          <a data-toggle="modal" href="#Abilities">
+        <li class="row_curriculum_item openModalBtn">
+          <a data-toggle="modal" href="#Skills">
             <div class="circle">
               <i class="fa fa-search"></i>
             </div>
           </a>
-          <a data-toggle="modal" href="#Abilities">
-            <h4>Abilities</h4>
+          <a data-toggle="modal" href="#Skills">
+            <h4>Skills</h4>
           </a>
           <p></p>
         </li>
         
-        <li class="row_curriculum_item">
+        <li class="row_curriculum_item openModalBtn">
           <a data-toggle="modal" href="#Experience">
             <div class="circle">
               <i class="fa fa-bar-chart"></i>
@@ -206,66 +205,125 @@
     </div>
   </section>
 
-  <dialog id="modal">
-    <div class="modal-dialog h-100">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto">
-              <div class="modal-body">
-                <i class="fa fa-wrench services-logo"></i>
-                <h4>Data Management</h4>
-                <p style="max-width: 600px">A data project always start with a data enginering step. You need to
-                  harvest data and store it in an adequate format to be able to use it.</p>
-                <div style="text-align: left">
-                  <h6>I can help you to..</h6>
-                  <hr>
-                  <ul>
-                    <li><u>Harvest</u> data from different sources like <code>APIs</code>, <code>SQL</code>
-                      databases or messy <code>Excel</code> spreadsheets.</li>
-                    <li><u>Reformat</u> and reshape data to make further analyses easier.</li>
-                    <li><u>Clean</u> datasets removing outliers and abberant data.</li>
-                    <li>Create reproducible data preparation <u>workflows</u></li>
-                    <li><u>Automatize</u> the creation of data related reports</li>
-                  </ul>
-                  <br>
-                  <h6>Example:</h6>
-                  <hr>
-                  <ul>
-                    <li>I collected tweets containing the <code>#surf</code> for 9 months to study how surfers use
-                      social media. I used the <code>twitter API</code> and made the data collection automatic
-                      thanks to a personnal <code>webserver</code> and a custom <code>R script</code>.</li>
-                    <li>I created a <code>dashboard</code> for a company called Terres Inovia. It is directly
-                      plugged on their <code>SQL database</code> and allows to access its information in real time.
-                    </li>
-                  </ul>
-                  <br>
-                  <h6>Contact me</h6>
-                  <hr>
-                  <span>Tell me more about your project at <a
-                      href="mailto:yan.holtz.data@gmail.com">yan.holtz.data@gmail.com</a> to see if we can work
-                    together.</span>
-                  <div style="margin-top: 15px;">
-                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                      href="https://github.com/holtzy/data_to_viz">Github</a>
-                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                      href="https://twitter.com/R_Graph_Gallery">Twitter</a>
-                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                      href="mailto:yan.holtz.data@gmail.com">Mail</a>
-                  </div>
-                  <br><br><br>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  
+
+
+  <center>
+    <dialog id="modalStudies">
+      <h4>Studies</h4>
+      <p style="max-width: 600px; font-size: 1.2rem;">Listed below are my top educational accomplishments.</p>
+      <div style="text-align: left">
+      <h6>Degree</h6>
+      <hr>
+      <ul>
+        <li><u>Universidad de Castilla-La Mancha:</u> University degree on Computer Engineering.</li>
+      </ul>
+      <br>
+      <h6>Master</h6>
+      <hr>
+      <ul>
+        <li><u>Universidad de Castilla-La Mancha:</u> Master on Big Data and Cloud Computing.</li>
+      </ul>
+      <br>
+      <h6>Other courses</h6>
+      <hr>
+      <ul>
+        <li><u>AISCIENCES:</u> Mastering Web Scraping with Python from Scratch.</li>
+        <li><u>AISCIENCES:</u> Scala & Spark- Scala from Beginner to Pro.</li>
+        <li><u>AISCIENCES:</u> PySpark & AWS: Master Big Data With PySpark and AWS.</li>
+        <li><u>AISCIENCES:</u> Scala & SpaMongoDB- Mastering MongoDB from Beginners to Professional.</li>
+        <li><u>Apasoft Training:</u> Tableau Desktop and Tableau Prep.</li>
+      </ul>
+      <br>
       </div>
+      <li class="closeModalBtn">
+        <a href="#Curriculum">
+          <div class="circle">
+            <i class="fa fa-close"></i>
+          </div>
+        </a>
+      </li>
     </dialog>
+  </center>
+  
+  <center>
+    <dialog id="modalSkills">
+      <h4>Skills</h4>
+      <p style="max-width: 600px; font-size: 1.2rem;">Listed below are my technical and general Skills.</p>
+      <div style="text-align: left">
+      <h6>General Skills</h6>
+      <hr>
+      <ul>
+        <li><u>Data Acquisition</u></li>
+        <li><u> Data Preparation</u></li>
+        <li><u>Data Visualization</u></li>
+        <li><u> Data Pre-Processing</u></li>
+        <li><u>Machine learning</u></li>
+        <li><u>Deep learning</u></li>
+        <li><u>Statistical analysis</u></li>
+        <li><u> Agile Methodologies</u></li>
+      </ul>
+      <br>
+      <h6>Technical Skills</h6>
+      <hr>
+      <ul>
+        <li><u>Operating Systems:</u> Windows, Linux</li>
+        <li><u>Programming Languages and Libreries:</u> Python, SQL, NoSQL, Java, Pandas, Numpy, ScikitLearn, Seaborn, Selenium, Matplotlib, Flask, Scrapy, Scala, Spark, PySpark</li>
+        <li><u>Other tools:</u> AWS, GIT, SCRUM, Jupyter, MongoDB, Tableau Desk, Tableau Prep, Visual Studio Code, Docker</li>
+      </ul>
+      <br>
+      <h6>Other Skills</h6>
+      <hr>
+      <ul>
+        <li><u>English:</u> B2-FIRST Certification.</li>
+      </ul>
+      <br>
+      </div>
+      <li class="closeModalBtn">
+        <a href="#Curriculum">
+          <div class="circle">
+            <i class="fa fa-close"></i>
+          </div>
+        </a>
+      </li>
+    </dialog>
+  </center>
+
+  <center>
+    <dialog id="modalExperience">
+      <h4>Experience</h4>
+      <p style="max-width: 600px; font-size: 1.2rem;">Jobs and companies I have worked for.</p>
+      <div style="text-align: left">
+      <h6>Innology Ventures SL.</h6>
+      <hr>
+      <ul>
+        <li><u>OPINATOR:</u> Part of the software development team of the cloud tool Opinator, defining and implementing data and text analytics techniques.</li>
+      </ul>
+      <br>
+      <h6>Universidad de Castilla-La Mancha</h6>
+      <hr>
+      <ul>
+        <li><u>I3A:</u> Carrying out functions and activities related to the line of research Machine learning with Bayesian networks.</li>
+      </ul>
+      <br>
+      <h6>Moai Climbing</h6>
+      <hr>
+      <ul>
+        <li><u>TOBA & Mailing:</u> Edition and improvement of their web application to manage their database, and development of a data analysis and automatic e-mailing application.</li>
+      </ul>
+      <br>
+      </div>
+      <li class="closeModalBtn">
+        <a href="#Curriculum">
+          <div class="circle">
+            <i class="fa fa-close"></i>
+          </div>
+        </a>
+      </li>
+    </dialog>
+  </center>
+  
 
   
 

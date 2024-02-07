@@ -347,65 +347,171 @@
 
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* MODALS
-  /* ------------------------------------------------------------------------------------------------------------------- */
-  #modal{
-    max-width: 150ch;
-  }
-  #modal::backdrop{
-    background-color: rgba(0, 0, 0, 0.55);
+  /* ------------------------------------------------------------------------------------------------------------------- */  
+  
+  /*-Studies-*/
+  .modalStudies::backdrop{
+    color:rgba(0, 0, 0, 0.55)
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  /* -------------------- CLOSING MODAL ------------------ */
-  
-  
-  .portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    background-color: transparent;
+  #modalStudies a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #modalStudies u{
+    color: #67dcff;
+  }
+
+  #modalStudies .closeModalBtn{
+    color: #67dcff;
   }
   
-  .portfolio-modal .close-modal:hover {
-    opacity: 0.3;
+  #modalStudies .closeModalBtn{
+    display: inline-block; /* Muestra los íconos en línea */
   }
-  
-  .portfolio-modal .close-modal .lr {
-    /* Safari and Chrome */
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #212529;
+
+  #modalStudies .closeModalBtn a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
   }
-  
-  .portfolio-modal .close-modal .lr .rl {
-    /* Safari and Chrome */
-    z-index: 1052;
-    width: 1px;
+
+  #modalStudies .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
     height: 75px;
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    background-color: #212529;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  #modalStudies .closeModalBtn .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+  #modalStudies .closeModalBtn:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  #modalStudies .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
   }
 
 
+  /*-Skills-*/
+  .modalSkills::backdrop{
+    color:rgba(0, 0, 0, 0.55)
+  }
+
+  #modalSkills a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #modalSkills u{
+    color: #67dcff;
+  }
+
+  #modalSkills .closeModalBtn{
+    color: #67dcff;
+  }
+  
+  #modalSkills .closeModalBtn{
+    display: inline-block; /* Muestra los íconos en línea */
+  }
+
+  #modalSkills .closeModalBtn a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+
+  #modalSkills .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  #modalSkills .closeModalBtn .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+  #modalSkills .closeModalBtn:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  #modalSkills .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
+
+
+  /*-Experience-*/
+  .modalExperience::backdrop{
+    color:rgba(0, 0, 0, 0.55)
+  }
+
+  #modalExperience a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #modalExperience u{
+    color: #67dcff;
+  }
+
+  #modalExperience .closeModalBtn{
+    color: #67dcff;
+  }
+  
+  #modalExperience .closeModalBtn{
+    display: inline-block; /* Muestra los íconos en línea */
+  }
+
+  #modalExperience .closeModalBtn a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+
+  #modalExperience .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  #modalExperience .closeModalBtn .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+  #modalExperience .closeModalBtn:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  #modalExperience .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
 
 
 
