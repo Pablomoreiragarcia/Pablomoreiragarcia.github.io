@@ -1,31 +1,19 @@
-body {
+  body {
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
     position: relative;
   }
-
   p {
-    line-height: 1.75;
+    font-size: 1.5rem;
   }
-
-  a{
-    color: rgb(173, 236, 255);
-  }
-
-  a:hover {
-    color: #2b1818;
-  }
-
-  .text-primary {
-    color: rgb(103, 220, 255) !important;
-  }
+  
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* PARTICLE.JS CSS
   /* ------------------------------------------------------------------------------------------------------------------- */
   
   #particles-js{
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: white;
     background-image: url('');
     background-size: cover;
@@ -40,7 +28,12 @@ body {
   #mainNav {
     background-color: white;
   }
-  
+
+  #mainNav a {
+    color: #67dcff;
+    text-decoration: none;
+  }
+
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -49,13 +42,11 @@ body {
     color: white;
     border: 0;
     background-color: #67dcff;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   /* Color of 'from data to viz' on the top left */
   #mainNav .navbar-brand {
     color: #67dcff;
-    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   }
   
   #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -69,8 +60,6 @@ body {
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: black;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
   }
   
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -88,11 +77,7 @@ body {
       transition: padding-top 0.3s, padding-bottom 0.3s;
       background-color: transparent;
     }
-
-    #mainNav .navbar-collapse{
-      text-align: center;
-    }
-
+    
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -119,14 +104,32 @@ body {
 
 
 
-
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* HOME
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
   .masthead {
+    width: 100%;
+    height: 100vh;
     text-align: center;
     color: black;
     position: relative;
     overflow: hidden;
+    
+  }
+  #masthead a {
+    text-decoration: none;
   }
 
+  .masthead .container {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    max-width: 1000px;
+    padding: 2em 3em;
+  }
   .masthead .inicio_social-buttons {
     list-style: none;
     padding: 0;
@@ -162,115 +165,377 @@ body {
     color: rgb(0, 0, 0);
   }
   
-
-  .text {
-    color: rgb(0, 0, 0);
+  .arrowlanding {
+    color: black;
     position: absolute;
-    top: 50%;
+    top: 98%;
     right: 50%;
     transform: translate(50%,-50%);
-    max-width: 600px;
+    max-width: 1000px;
     padding: 2em 3em;
   }
+  
 
 
 
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* INFORMATION
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  #information {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ajusta el alto al 100% del viewport */
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .contact_text-container {
+  #information .container {
+    color: rgb(0, 0, 0);
     overflow: hidden; /* Evita que el texto se desborde del contenedor */
     text-align: center; /* Centra el texto */
-    max-width: 400px; /* Establece el ancho máximo del texto */
+    max-width: 1000px; /* Establece el ancho máximo del texto */
     margin: 0 auto; /* Centra el contenedor */
-  }
-  .contact_social-buttons {
-    list-style: none;
-    padding: 0;
-    text-align: center; /* Alinea los íconos en el centro */
-    position: relative;
-    z-index: 99;
-  }
-  .contact_social-buttons_item {
-    display: inline-block; /* Muestra los íconos en línea */
-    margin: 0 10px; /* Añade un espacio entre los íconos */
-    position: relative;
-    z-index: 99;
+    top: 50%;
+    right: 50%;
   }
 
-  .circle {
-    display: inline-block;
-    width: 40px; /* Ajusta el tamaño del círculo según sea necesario */
-    height: 27px;
+
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* CURRICULUM
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  #curriculum {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ajusta el alto al 100% del viewport */
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #curriculum a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #curriculum .container {
+    color: rgb(0, 0, 0);
+    overflow: hidden; /* Evita que el texto se desborde del contenedor */
+    text-align: center; /* Centra el texto */
+    max-width: 1000px; /* Establece el ancho máximo del texto */
+    margin: 0 auto; /* Centra el contenedor */
+    top: 50%;
+    right: 50%;
+    
+  }
+
+  #curriculum .row_curriculum {
+    
+    display: flex;
+    flex-direction: row; /* Establece la dirección del flujo como fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: auto; /* Mueve el contenedor hacia la derecha para centrarlo */
+    margin-right: auto; /* Mueve el contenedor hacia la izquierda para centrarlo */
+  }
+  
+  #curriculum .row_curriculum .row_curriculum_item {
+    display: inline-block; /* Muestra los íconos en línea */
+    color: #000000;
+  }
+  #curriculum .row_curriculum .row_curriculum_item a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+
+  #curriculum .row_curriculum .row_curriculum_item .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
     border-radius: 50%; /* Crea un círculo */
     background-color: #000; /* Color de fondo negro */
     transition: background-color 0.3s; /* Transición suave del color de fondo */
     overflow: hidden;
     text-align: center; /* Centra el contenido dentro del círculo */
-    position: relative;
-    z-index: 99;
   }
 
-  .circle:hover {
-    background-color: rgb(103, 220, 255); /* Cambia el color de fondo al pasar el ratón */
-    position: relative;
-    z-index: 99;
-  }
-
-  .fa {
+  #curriculum .row_curriculum .row_curriculum_item .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     vertical-align: middle; /* Centra el ícono verticalmente */
     color: white;
-    transition: color 0.3s; /* Transición suave del color del ícono */
-    position: relative;
-    z-index: 99;
+    font-size: 24px;
+  }
+  #curriculum .row_curriculum .row_curriculum_item:hover a{
+    color: #67dcff;
   }
 
-  .circle:hover .fa {
-    color: #000000; /* Cambia el color del ícono al pasar el ratón sobre el círculo */
+  #curriculum .row_curriculum .row_curriculum_item:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+  
+  #curriculum .row_curriculum .row_curriculum_item:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
+
+  #curriculum .descarga_button{
+    display: inline-block; /* Muestra los íconos en línea */
+    color: #000000;
+  }
+
+  #curriculum .descarga_button a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+
+  #curriculum .descarga_button .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  #curriculum .descarga_button .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+  #curriculum .descarga_button:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  #curriculum .descarga_button:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* PORTFOLIO
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  #portfolio {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ajusta el alto al 100% del viewport */
+    text-align: center;
+    color: black;
     position: relative;
-    z-index: 99;
+    overflow: hidden;
   }
 
 
+
+
+
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* MODALS
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  #modal{
+    max-width: 150ch;
+  }
+  #modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------- CLOSING MODAL ------------------ */
+  
+  
+  .portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+  
+  .portfolio-modal .close-modal .lr {
+    /* Safari and Chrome */
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #212529;
+  }
+  
+  .portfolio-modal .close-modal .lr .rl {
+    /* Safari and Chrome */
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #212529;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* CONTACT
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  #contact {
+    text-align: center;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: #67dcff;
+  }
+  
+  #contact .container {
+    color: rgb(0, 0, 0);
+    overflow: hidden; /* Evita que el texto se desborde del contenedor */
+    text-align: center; /* Centra el texto */
+    max-width: 1000px; /* Establece el ancho máximo del texto */
+    margin: 0 auto; /* Centra el contenedor */
+    top: 50%;
+    right: 50%;
+  }
+
+  #contact .row_contact {
+    display: flex;
+    flex-direction: row; /* Establece la dirección del flujo como fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: auto; /* Mueve el contenedor hacia la derecha para centrarlo */
+    margin-right: auto; /* Mueve el contenedor hacia la izquierda para centrarlo */
+  }
+
+  #contact .row_contact .row_contact_item {
+    display: inline-block; /* Muestra los íconos en línea */
+    color: #000000;
+  }
+
+  #contact .row_contact .row_contact_item a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+
+  #contact .row_contact .row_contact_item .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+
+  #contact .row_contact .row_contact_item .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+
+  #curriculum .row_curriculum .row_curriculum_item:hover a{
+    color: #67dcff;
+  }
+
+  #contact .row_contact .row_contact_item:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+  }
+
+  #contact .row_contact .row_contact_item:hover .circle .fa {
+    color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   footer {
     background-color: #ffffff;
     padding: 10px;
     text-align: center;
     margin-top: auto;
   }
+
+
+
+  

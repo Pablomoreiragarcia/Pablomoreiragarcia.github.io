@@ -6,17 +6,21 @@
             if ((o = o.length ? o : a("[name=" + this.hash.slice(1) + "]")).length)
                 return a("html, body").animate({
                     scrollTop: o.offset().top - 54
-                }, 1e3, "easeInOutExpo"),
+                }, 60, "easeInOutExpo"),
                 !1
         }
     }),
+
+
     a(".js-scroll-trigger").click(function() {
         a(".navbar-collapse").collapse("hide")
     }),
-    a("body").scrollspy({
-        target: "#mainNav",
-        offset: 56
-    });
+
+
+    new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example'
+      });
+
     var o = function() {
         a("#mainNav").offset().top > 100 ? a("#mainNav").addClass("navbar-shrink") : a("#mainNav").removeClass("navbar-shrink")
     };
