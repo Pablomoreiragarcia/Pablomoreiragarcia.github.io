@@ -115,8 +115,10 @@
     overflow: hidden;
     
   }
-  #masthead a {
+
+  .masthead a {
     text-decoration: none;
+    color: #000000;
   }
 
   .masthead .container {
@@ -128,21 +130,31 @@
     max-width: 1000px;
     padding: 2em 3em;
   }
+
   .masthead .inicio_social-buttons {
-    list-style: none;
-    padding: 0;
-    text-align: center; /* Alinea los íconos en el centro */
+    display: flex;
+    flex-direction: row; /* Establece la dirección del flujo como fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: auto; /* Mueve el contenedor hacia la derecha para centrarlo */
+    margin-right: auto; /* Mueve el contenedor hacia la izquierda para centrarlo */
   }
 
   .masthead .inicio_social-buttons .inicio_social-buttons_item {
     display: inline-block; /* Muestra los íconos en línea */
-    margin: 0 10px; /* Añade un espacio entre los íconos */
+    color: #000000;
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
   }
 
   .masthead .inicio_social-buttons .inicio_social-buttons_item .circle {
-    display: inline-block;
-    width: 40px; /* Ajusta el tamaño del círculo según sea necesario */
-    height: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
     border-radius: 50%; /* Crea un círculo */
     background-color: #000; /* Color de fondo negro */
     transition: background-color 0.3s; /* Transición suave del color de fondo */
@@ -151,8 +163,15 @@
   }
 
   .masthead .inicio_social-buttons .inicio_social-buttons_item .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     vertical-align: middle; /* Centra el ícono verticalmente */
     color: white;
+    font-size: 24px;
+  }
+
+  .masthead .inicio_social-buttons .inicio_social-buttons_item:hover a{
+    color: #67dcff;
   }
 
   .masthead .inicio_social-buttons .inicio_social-buttons_item:hover .circle {
@@ -162,7 +181,7 @@
   .masthead .inicio_social-buttons .inicio_social-buttons_item:hover .circle .fa {
     color: rgb(0, 0, 0);
   }
-  
+
   .arrowlanding {
     color: black;
     position: absolute;
@@ -173,6 +192,27 @@
     padding: 2em 3em;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* INFORMATION
@@ -513,7 +553,6 @@
     color: black;
     position: relative;
     overflow: hidden;
-    height: 100vh;
   }
 
   #contact a {
@@ -581,6 +620,176 @@
   #contact .row_contact .row_contact_item:hover .circle .fa {
     color: rgb(0, 0, 0);
   }
+  
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* Carrousel
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  
+  #references{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    height: 100vh;
+
+  }
+
+  #references .container{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  #references .cards{
+    position: relative;
+    height: 500px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  #references .cards label{
+    position: absolute;
+    width: 430px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+  }
+  
+  #references .cards .card{
+    position: relative;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 35px;
+
+  }
+
+  #references .cards .image{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #references .cards .image img{
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.50);
+    margin-top: 23px;
+    width: 86%;
+    height: 220px;
+    object-fit: cover;
+    transition: all .7s;
+  }
+
+  #references .cards .infos{
+    display: block;
+    text-align: end;
+    padding-top: 60px;
+  }
+
+  #references .cards .infos span{
+    display: block;
+  }
+
+  #references .cards .infos .name{
+    font-size: 30px;
+    color: var(--current-color);
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    padding-left: 25%;
+    transition: all 0.6s ease;
+  }
+
+  #references .card .lorem{
+    font-size: 15.5px;
+    color: #000;
+    letter-spacing: 3px;
+  }
+
+
+
+  #references input{
+    display: none;
+  }
+
+  #s1:checked~.cards #slide4,
+  #s2:checked~.cards #slide5,
+  #s3:checked~.cards #slide1,
+  #s4:checked~.cards #slide2,
+  #s5:checked~.cards #slide3{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color: #eceaed;
+    --current-color2: #404457;
+  }
+
+  #s1:checked~.cards #slide5,
+  #s2:checked~.cards #slide1,
+  #s3:checked~.cards #slide2,
+  #s4:checked~.cards #slide3,
+  #s5:checked~.cards #slide4{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color: #eceaed;
+    --current-color2: #404457;
+  }
+
+  #s1:checked~.cards #slide1,
+  #s2:checked~.cards #slide2,
+  #s3:checked~.cards #slide3,
+  #s4:checked~.cards #slide4,
+  #s5:checked~.cards #slide5{
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.50);
+    transform: translate3d(0, 0, 0);
+    --current-color: #fad00c;
+    --current-color2: #eceaed;
+  }
+
+  #s1:checked~.cards #slide2,
+  #s2:checked~.cards #slide3,
+  #s3:checked~.cards #slide4,
+  #s4:checked~.cards #slide5,
+  #s5:checked~.cards #slide1{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    transform: translate3d(35%, 0, -120px);
+    --current-color: #eceaed;
+    --current-color2: #404457;
+  }
+
+  #s1:checked~.cards #slide3,
+  #s2:checked~.cards #slide4,
+  #s3:checked~.cards #slide5,
+  #s4:checked~.cards #slide1,
+  #s5:checked~.cards #slide2{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+    transform: translate3d(70%, 0, -220px);
+    --current-color: #eceaed;
+    --current-color2: #404457;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* ------------------------------------------------------------------------------------------------------------------- */
