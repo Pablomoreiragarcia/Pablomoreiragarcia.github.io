@@ -6,6 +6,10 @@
   p {
     font-size: 1.5rem;
   }
+   
+  .hidden {
+    display: none;
+  }
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* PARTICLE.JS CSS
   /* ------------------------------------------------------------------------------------------------------------------- */
@@ -316,39 +320,38 @@
     color: #67dcff;
   }
   #modalStudies .closeModalBtn{
-    display: inline-block; /* Muestra los íconos en línea */
+    display: inline-block;
   }
   #modalStudies .closeModalBtn a {
-    transition: color 0.3s; /* Transición suave del color de fondo */
+    transition: color 0.3s;
   }
   #modalStudies .closeModalBtn .circle {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
     height: 75px;
-    border-radius: 50%; /* Crea un círculo */
-    background-color: #000; /* Color de fondo negro */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s;
     overflow: hidden;
-    text-align: center; /* Centra el contenido dentro del círculo */
+    text-align: center;
   }
   #modalStudies .closeModalBtn .circle .fa {
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    vertical-align: middle; /* Centra el ícono verticalmente */
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
     color: white;
     font-size: 24px;
   }
   #modalStudies .closeModalBtn:hover .circle {
-    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #67dcff;
     transform: scale(1.1);
   }
   #modalStudies .closeModalBtn:hover .circle .fa {
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
-  /*-Skills-*/
   .modalSkills::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
@@ -363,39 +366,38 @@
     color: #67dcff;
   }
   #modalSkills .closeModalBtn{
-    display: inline-block; /* Muestra los íconos en línea */
+    display: inline-block;
   }
   #modalSkills .closeModalBtn a {
-    transition: color 0.3s; /* Transición suave del color de fondo */
+    transition: color 0.3s;
   }
   #modalSkills .closeModalBtn .circle {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    justify-content: center; 
+    align-items: center; 
+    width: 100px;
     height: 75px;
-    border-radius: 50%; /* Crea un círculo */
-    background-color: #000; /* Color de fondo negro */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s;
     overflow: hidden;
-    text-align: center; /* Centra el contenido dentro del círculo */
+    text-align: center; 
   }
   #modalSkills .closeModalBtn .circle .fa {
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    vertical-align: middle; /* Centra el ícono verticalmente */
+    justify-content: center; 
+    align-items: center; 
+    vertical-align: middle;
     color: white;
     font-size: 24px;
   }
   #modalSkills .closeModalBtn:hover .circle {
-    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #67dcff;
     transform: scale(1.1);
   }
   #modalSkills .closeModalBtn:hover .circle .fa {
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
-  /*-Experience-*/
   .modalExperience::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
@@ -410,32 +412,32 @@
     color: #67dcff;
   }
   #modalExperience .closeModalBtn{
-    display: inline-block; /* Muestra los íconos en línea */
+    display: inline-block;
   }
   #modalExperience .closeModalBtn a {
-    transition: color 0.3s; /* Transición suave del color de fondo */
+    transition: color 0.3s;
   }
   #modalExperience .closeModalBtn .circle {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    justify-content: center;
+    align-items: center;
+    width: 100px;
     height: 75px;
-    border-radius: 50%; /* Crea un círculo */
-    background-color: #000; /* Color de fondo negro */
-    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    border-radius: 50%; 
+    background-color: #000;
+    transition: background-color 0.3s;
     overflow: hidden;
-    text-align: center; /* Centra el contenido dentro del círculo */
+    text-align: center;
   }
   #modalExperience .closeModalBtn .circle .fa {
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    vertical-align: middle; /* Centra el ícono verticalmente */
+    justify-content: center;
+    align-items: center; 
+    vertical-align: middle;
     color: white;
     font-size: 24px;
   }
   #modalExperience .closeModalBtn:hover .circle {
-    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #67dcff; 
     transform: scale(1.1);
   }
   #modalExperience .closeModalBtn:hover .circle .fa {
@@ -590,7 +592,8 @@
   #portfolio {
     background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-attachment: fixed;
-
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-size: cover;
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
@@ -687,7 +690,3 @@
     text-align: center;
     margin-top: auto;
   }
-
-
-
-  
