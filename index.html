@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Pablo Moreira - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Welcome to Pablo Moreira's homepage. Graduate in computer engineering and master's degree in big data and cloud computing">
+  <meta name="description"
+    content="Welcome to Pablo Moreira's homepage. Graduate in computer engineering and master's degree in big data and cloud computing">
   <meta name="keywords"
     content="Datascience,Training,Data,Datavisualization,Plot,Chart,Graph,Python,D3,MachineLearning,Classification,DataIngeneer">
   <meta name="author" content="Pablo Moreira">
@@ -17,90 +18,102 @@
     content="Welcome to Pablo Moreira's homepage. Graduate in computer engineering and master's degree in big data and cloud computing." />
   <meta property='og:url' content="https://pablomoreiragarcia.github.io/" />
   <meta property="og:type" content="website" />
-  
+
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/portfolio.css">
+  <link href="css/portfolio.css" rel="stylesheet" >
 
   <!-- Bootstrap core CSS -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body id="page-top">
+<body>
   <!-- --------------------------------------------------------------------------------------------------------------------->
   <!-- NAV BAR -->
   <!-- --------------------------------------------------------------------------------------------------------------------->
+  
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
-      <a class="js-scroll-trigger" href="#page-top">
-        HOME
+    <div class="container-fluid">
+      <a href="#home">
+        <img class="navbar-brand me-auto" width="50px" src="files/Logo.png" alt="Logo">
       </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#information">Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#curriculum">Curriculum</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#references">References</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger" href="#information">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger" href="#curriculum">Curriculum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger" href="#references">References</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
   <!-- --------------------------------------------------------------------------------------------------------------------->
   <!-- HOME -->
   <!-- --------------------------------------------------------------------------------------------------------------------->
-  <header id="home">
+  <section id="home">
     <div id="particles-js"></div>
     <div class="container">
-      <p style="display:inline; font-size: 35px; padding-left: 30px">PABLO</p>
-      <img width="90px" style="display:inline; margin-bottom: 20px; margin-right: 10px; margin-left: 10px"
-        src="files/Logo.png">
-      <p style="display:inline; font-size: 35px">MOREIRA</p>
+      <div class="content">
+        <p style="display:inline; font-size: 35px;">PABLO</p>
+        <img width="90px" style="display:inline; margin-bottom: 20px; margin-right: 10px; margin-left: 10px" src="files/Logo.png">
+        <p style="display:inline; font-size: 35px">MOREIRA</p>
+      </div>
       <p>Welcome to Pablo Moreira's homepage</p>
       <p>Computer engineer specialized in big data and cloud computing</p>
-      <br>
-      <ul class="inicio_social-buttons">
-        <li class="inicio_social-buttons_item">
-          <a href="https://www.linkedin.com/in/pablo-moreira-garcia-52267a208/" target="_blank" rel="noopener noreferrer">
-            <div class="circle">
-              <i class="fa fa-linkedin"></i>
-            </div>
-          </a>
-        </li>
-        <li class="inicio_social-buttons_item">
-          <a href="https://github.com/Pablomoreiragarcia" target="_blank" rel="noopener noreferrer">
-            <div class="circle">
-              <i class="fa fa-github"></i>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <div >
+        <ul class="inicio_social-buttons">
+          <li class="inicio_social-buttons_item">
+            <a href="https://www.linkedin.com/in/pablo-moreira-garcia-52267a208/" target="_blank"
+              rel="noopener noreferrer">
+              <div class="circle">
+                <i class="fa fa-linkedin"></i>
+              </div>
+            </a>
+          </li>
+          <li class="inicio_social-buttons_item">
+            <a href="https://github.com/Pablomoreiragarcia" target="_blank" rel="noopener noreferrer">
+              <div class="circle">
+                <i class="fa fa-github"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="arrowlanding">
       <a class="js-scroll-trigger" href="#information">
         <p style="font-size: 150px; color: #67dcff">&#xfe40;</p>
       </a>
     </div>
-  </header>
+  </section>
   <script src="js\particles.min.js"></script>
   <script src="js\app.js"></script>
   <!-- --------------------------------------------------------------------------------------------------------------------->
@@ -110,12 +123,15 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-4 col-12 text-center mb-4 mb-lg-0 ">
-          <img class="img-fluid" src="files/Foto.jpg" alt="Pablo Moreira profile picture" style="max-width: 100%; height: auto; max-height: 300px;">
+          <img class="img-fluid" src="files/Foto.jpg" alt="Pablo Moreira profile picture"
+            style="max-width: 100%; height: auto; max-height: 300px;">
         </div>
         <div class="col-lg-8 col-12 text-center text-md-left">
           <p>Hi, I'm Pablo.</p>
-          <p>My job consists in helping people to analyse, visualize and get information from their datasets. I am skilled for most
-            data-science steps: data <b>pre-processing</b>, application of <b>statistical methods</b>, data <b>visualization</b>, model <b>planning and building</b> and results
+          <p>My job consists in helping people to analyse, visualize and get information from their datasets. I am
+            skilled for most
+            data-science steps: data <b>pre-processing</b>, application of <b>statistical methods</b>, data
+            <b>visualization</b>, model <b>planning and building</b> and results
             communication.</p>
         </div>
       </div>
@@ -126,7 +142,10 @@
   <!-- --------------------------------------------------------------------------------------------------------------------->
   <section id="curriculum">
     <div class="container">
-      <p  style="display:inline; font-size: 35px; padding-left: 30px">Curriculum</p>
+      <br>
+      <br>
+      <br>
+      <p style="display:inline; font-size: 35px; padding-left: 30px">Curriculum</p>
       <p>In this section you will find details about my work experience,</p>
       <p> my academic studies and my skills and knowledge.</p>
       <br>
@@ -134,7 +153,7 @@
 
         <li class="row_curriculum_item openModalBtn js-scroll-trigger">
           <a data-toggle="modal" href="#Studies">
-              <div class="circle">
+            <div class="circle">
               <i class="fa fa-book"></i>
             </div>
           </a>
@@ -187,25 +206,25 @@
       <h4>Studies</h4>
       <p style="max-width: 600px; font-size: 1.2rem;">Listed below are my top educational accomplishments.</p>
       <div style="text-align: left">
-      <h6>Degree</h6>
-      <hr>
-      <ul>
-        <li><u>Universidad de Castilla-La Mancha:</u> University degree on Computer Engineering.</li>
-      </ul>
-      <h6>Master</h6>
-      <hr>
-      <ul>
-        <li><u>Universidad de Castilla-La Mancha:</u> Master on Big Data and Cloud Computing.</li>
-      </ul>
-      <h6>Other courses</h6>
-      <hr>
-      <ul>
-        <li><u>AISCIENCES:</u> Mastering Web Scraping with Python from Scratch.</li>
-        <li><u>AISCIENCES:</u> Scala & Spark- Scala from Beginner to Pro.</li>
-        <li><u>AISCIENCES:</u> PySpark & AWS: Master Big Data With PySpark and AWS.</li>
-        <li><u>AISCIENCES:</u> Scala & SpaMongoDB- Mastering MongoDB from Beginners to Professional.</li>
-        <li><u>Apasoft Training:</u> Tableau Desktop and Tableau Prep.</li>
-      </ul>
+        <h6>Degree</h6>
+        <hr>
+        <ul>
+          <li><u>Universidad de Castilla-La Mancha:</u> University degree on Computer Engineering.</li>
+        </ul>
+        <h6>Master</h6>
+        <hr>
+        <ul>
+          <li><u>Universidad de Castilla-La Mancha:</u> Master on Big Data and Cloud Computing.</li>
+        </ul>
+        <h6>Other courses</h6>
+        <hr>
+        <ul>
+          <li><u>AISCIENCES:</u> Mastering Web Scraping with Python from Scratch.</li>
+          <li><u>AISCIENCES:</u> Scala & Spark- Scala from Beginner to Pro.</li>
+          <li><u>AISCIENCES:</u> PySpark & AWS: Master Big Data With PySpark and AWS.</li>
+          <li><u>AISCIENCES:</u> Scala & SpaMongoDB- Mastering MongoDB from Beginners to Professional.</li>
+          <li><u>Apasoft Training:</u> Tableau Desktop and Tableau Prep.</li>
+        </ul>
       </div>
       <li class="closeModalBtn">
         <a href="#Curriculum">
@@ -216,36 +235,38 @@
       </li>
     </dialog>
   </center>
-  
+
   <center>
     <dialog id="modalSkills">
       <h4>Skills</h4>
       <p style="max-width: 600px; font-size: 1.2rem;">Listed below are my technical and general Skills.</p>
       <div style="text-align: left">
-      <h6>General Skills</h6>
-      <hr>
-      <ul>
-        <li><u>Data Acquisition</u></li>
-        <li><u> Data Preparation</u></li>
-        <li><u>Data Visualization</u></li>
-        <li><u> Data Pre-Processing</u></li>
-        <li><u>Machine learning</u></li>
-        <li><u>Deep learning</u></li>
-        <li><u>Statistical analysis</u></li>
-        <li><u> Agile Methodologies</u></li>
-      </ul>
-      <h6>Technical Skills</h6>
-      <hr>
-      <ul>
-        <li><u>Operating Systems:</u> Windows, Linux</li>
-        <li><u>Programming Languages and Libreries:</u> Python, SQL, NoSQL, Java, Pandas, Numpy, ScikitLearn, Seaborn, Selenium, Matplotlib, Flask, Scrapy, Scala, Spark, PySpark</li>
-        <li><u>Other tools:</u> AWS, GIT, SCRUM, Jupyter, MongoDB, Tableau Desk, Tableau Prep, Visual Studio Code, Docker</li>
-      </ul>
-      <h6>Other Skills</h6>
-      <hr>
-      <ul>
-        <li><u>English:</u> B2-FIRST Certification.</li>
-      </ul>
+        <h6>General Skills</h6>
+        <hr>
+        <ul>
+          <li><u>Data Acquisition</u></li>
+          <li><u> Data Preparation</u></li>
+          <li><u>Data Visualization</u></li>
+          <li><u> Data Pre-Processing</u></li>
+          <li><u>Machine learning</u></li>
+          <li><u>Deep learning</u></li>
+          <li><u>Statistical analysis</u></li>
+          <li><u> Agile Methodologies</u></li>
+        </ul>
+        <h6>Technical Skills</h6>
+        <hr>
+        <ul>
+          <li><u>Operating Systems:</u> Windows, Linux</li>
+          <li><u>Programming Languages and Libreries:</u> Python, SQL, NoSQL, Java, Pandas, Numpy, ScikitLearn, Seaborn,
+            Selenium, Matplotlib, Flask, Scrapy, Scala, Spark, PySpark</li>
+          <li><u>Other tools:</u> AWS, GIT, SCRUM, Jupyter, MongoDB, Tableau Desk, Tableau Prep, Visual Studio Code,
+            Docker</li>
+        </ul>
+        <h6>Other Skills</h6>
+        <hr>
+        <ul>
+          <li><u>English:</u> B2-FIRST Certification.</li>
+        </ul>
       </div>
       <li class="closeModalBtn">
         <a href="#Curriculum">
@@ -262,21 +283,24 @@
       <h4>Experience</h4>
       <p style="max-width: 600px; font-size: 1.2rem;">Jobs and companies I have worked for.</p>
       <div style="text-align: left">
-      <h6>Innology Ventures SL.</h6>
-      <hr>
-      <ul>
-        <li><u>OPINATOR:</u> Part of the software development team of the cloud tool Opinator, defining and implementing data and text analytics techniques.</li>
-      </ul>
-      <h6>Universidad de Castilla-La Mancha</h6>
-      <hr>
-      <ul>
-        <li><u>I3A:</u> Carrying out functions and activities related to the line of research Machine learning with Bayesian networks.</li>
-      </ul>
-      <h6>Moai Climbing</h6>
-      <hr>
-      <ul>
-        <li><u>TOBA & Mailing:</u> Edition and improvement of their web application to manage their database, and development of a data analysis and automatic e-mailing application.</li>
-      </ul>
+        <h6>Innology Ventures SL.</h6>
+        <hr>
+        <ul>
+          <li><u>OPINATOR:</u> Part of the software development team of the cloud tool Opinator, defining and
+            implementing data and text analytics techniques.</li>
+        </ul>
+        <h6>Universidad de Castilla-La Mancha</h6>
+        <hr>
+        <ul>
+          <li><u>I3A:</u> Carrying out functions and activities related to the line of research Machine learning with
+            Bayesian networks.</li>
+        </ul>
+        <h6>Moai Climbing</h6>
+        <hr>
+        <ul>
+          <li><u>TOBA & Mailing:</u> Edition and improvement of their web application to manage their database, and
+            development of a data analysis and automatic e-mailing application.</li>
+        </ul>
       </div>
       <li class="closeModalBtn">
         <a href="#Curriculum">
@@ -294,6 +318,7 @@
     <div class="container">
       <hr>
       <hr>
+      <hr>
       <input type="radio" name="slider" id="s1" checked>
       <input type="radio" name="slider" id="s2">
       <input type="radio" name="slider" id="s3">
@@ -306,12 +331,13 @@
               <img src="files/Jose Gomez.jpg" alt="Jose Gomez photo">
             </div>
             <div class="infos">
-              <span style="color: grey; font-size: 8"><i>"Very grateful for the work that Pablo did for us at Moai 
-                Climbing improving the functionalities of our database management application and adding some features 
-                as well as analyzing the stored data and obtaining a benefit for our company."</i></span>
-              <span><a href="https://www.linkedin.com/in/jos%C3%A9-g%C3%B3mez-mart%C3%ADnez-5bb617143/" target="_blank" rel="noopener noreferrer" >Jose Gomez</a> - <span
-                  style="font-size: 12px; display: inline;"><i>CEO at <a
-                      href="https://www.moaiclimbing.com/" target="_blank" rel="noopener noreferrer" >Moai Climbing</a></i></span></span>
+              <span style="color: grey; font-size: 8"><i>"Very grateful for the work that Pablo did for us at Moai
+                  Climbing improving the functionalities of our database management application and adding some features
+                  as well as analyzing the stored data and obtaining a benefit for our company."</i></span>
+              <span><a href="https://www.linkedin.com/in/jos%C3%A9-g%C3%B3mez-mart%C3%ADnez-5bb617143/" target="_blank"
+                  rel="noopener noreferrer">Jose Gomez</a> - <span style="font-size: 12px; display: inline;"><i>CEO at
+                    <a href="https://www.moaiclimbing.com/" target="_blank" rel="noopener noreferrer">Moai
+                      Climbing</a></i></span></span>
             </div>
           </div>
         </label>
@@ -346,7 +372,8 @@
           <div class="col-lg-12 text-center" style="padding-bottom: 3%">
             <p id="website" style="display:inline; font-size: 35px">Portfolio</p>
             <center>
-              <p style="max-width: 500px;  line-height: 27px;" class="section-subheading text-muted">Projects I have been working on.</p>
+              <p style="max-width: 500px;  line-height: 27px;" class="section-subheading text-muted">Projects I have
+                been working on.</p>
             </center>
           </div>
         </div>
@@ -363,25 +390,29 @@
       <h2 class="section-heading text-uppercase" style="color: black">CONTACT</h2>
       <p>Feel free to contact me for any question.</p>
       <p> For job proposals please send me an email.</p>
-      <a style="font-size: 1.5rem;" href="mailto:pablo.moreira.data@gmail.com" target="_blank" rel="noopener noreferrer">pablo.moreira.data@gmail.com</a>
+      <a style="font-size: 1.5rem;" href="mailto:pablo.moreira.data@gmail.com" target="_blank"
+        rel="noopener noreferrer">pablo.moreira.data@gmail.com</a>
       <br><br>
       <ul class="row_contact">
         <li class="row_contact_item js-scroll-trigger">
-          <a class="js-scroll-trigger" href="mailto:pablo.moreira.data@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a class="js-scroll-trigger" href="mailto:pablo.moreira.data@gmail.com" target="_blank"
+            rel="noopener noreferrer">
             <div class="circle">
               <i class="fa fa-envelope"></i>
             </div>
           </a>
         </li>
         <li class="row_contact_item js-scroll-trigger">
-          <a class="js-scroll-trigger" href="https://github.com/Pablomoreiragarcia" target="_blank" rel="noopener noreferrer">
+          <a class="js-scroll-trigger" href="https://github.com/Pablomoreiragarcia" target="_blank"
+            rel="noopener noreferrer">
             <div class="circle">
               <i class="fa fa-github"></i>
             </div>
           </a>
         </li>
         <li class="row_contact_item js-scroll-trigger">
-          <a class="js-scroll-trigger" href="https://www.linkedin.com/in/pablo-moreira-garcia-52267a208/" target="_blank" rel="noopener noreferrer">
+          <a class="js-scroll-trigger" href="https://www.linkedin.com/in/pablo-moreira-garcia-52267a208/"
+            target="_blank" rel="noopener noreferrer">
             <div class="circle">
               <i class="fa fa-linkedin"></i>
             </div>
@@ -402,7 +433,9 @@
   <script src="jquery/jquery.js"></script>
   <script src="bootstrap/js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <script src="jquery.easing/jquery.easing.min.js"></script>
 
 
@@ -410,4 +443,5 @@
   <script src="js/modals.js"></script>
   <script src="js/references.js"></script>
 </body>
+
 </html>
