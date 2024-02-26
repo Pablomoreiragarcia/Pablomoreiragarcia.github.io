@@ -343,6 +343,7 @@
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
+  /*-Skills-*/
   .modalSkills::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
@@ -389,6 +390,7 @@
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
+  /*-Experience-*/
   .modalExperience::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
@@ -432,6 +434,147 @@
     transform: scale(1.1);
   }
   #modalExperience .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+  }
+  /*-Wine-*/
+  .modalWinePrediction::backdrop{
+    color:rgba(0, 0, 0, 0.55)
+  }
+  #modalWinePrediction a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #modalWinePrediction u{
+    color: #67dcff;
+  }
+  #modalWinePrediction .closeModalBtn{
+    color: #67dcff;
+  }
+  #modalWinePrediction .closeModalBtn{
+    display: inline-block;
+  }
+  #modalWinePrediction .closeModalBtn a {
+    transition: color 0.3s;
+  }
+  #modalWinePrediction .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    text-align: center;
+  }
+  #modalWinePrediction .closeModalBtn .circle .fa {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 24px;
+  }
+  #modalWinePrediction .closeModalBtn:hover .circle {
+    background-color: #67dcff;
+    transform: scale(1.1);
+  }
+  #modalWinePrediction .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+  }
+  /*-Injuries-*/
+  .modalInjuries::backdrop{
+    color:rgba(0, 0, 0, 0.55)
+  }
+  #modalInjuries a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #modalInjuries u{
+    color: #67dcff;
+  }
+  #modalInjuries .closeModalBtn{
+    color: #67dcff;
+  }
+  #modalInjuries .closeModalBtn{
+    display: inline-block;
+  }
+  #modalInjuries .closeModalBtn a {
+    transition: color 0.3s;
+  }
+  #modalInjuries .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    text-align: center;
+  }
+  #modalInjuries .closeModalBtn .circle .fa {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 24px;
+  }
+  #modalInjuries .closeModalBtn:hover .circle {
+    background-color: #67dcff;
+    transform: scale(1.1);
+  }
+  #modalInjuries .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+  }
+  /*Modal Buttons*/
+  .modal_portfolio-buttons {
+    display: flex;
+    flex-direction: row; /* Establece la dirección del flujo como fila */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo del eje principal */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: auto; /* Mueve el contenedor hacia la derecha para centrarlo */
+    margin-right: auto; /* Mueve el contenedor hacia la izquierda para centrarlo */
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item {
+    display: inline-block; /* Muestra los íconos en línea */
+    color: #000000;
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item a {
+    transition: color 0.3s; /* Transición suave del color de fondo */
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item .circle {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 75px;
+    border-radius: 50%; /* Crea un círculo */
+    background-color: #000; /* Color de fondo negro */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del círculo */
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item .circle .fa {
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    vertical-align: middle; /* Centra el ícono verticalmente */
+    color: white;
+    font-size: 24px;
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item:hover a{
+    color: #67dcff;
+    transform: scale(1.1);
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item:hover .circle {
+    background-color: #67dcff; /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.1);
+  }
+  .modal_portfolio-buttons .modal_portfolio-buttons_item:hover .circle .fa {
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
@@ -583,17 +726,78 @@
   #portfolio {
     background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Ajusta el alto al 100% del viewport */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
     color: black;
     position: relative;
     overflow: hidden;
     height: auto;
+  }
+  #portfolio-items {
+    display: flex; /* Activa el modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila */
+    justify-content: center ; /* Distribuye el espacio restante entre los elementos */
+    gap: 10px;
+  }
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    width: 25%; /* Ajusta el ancho de cada elemento */
+    float: left; /* Hace que los elementos floten hacia la izquierda */
+    box-sizing: border-box;
+  }
+
+  .portfolio-item:last-child {
+    margin-right: 0; /* Eliminar margen derecho del último elemento */
+  }
+  
+  #portfolio .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Inicialmente oculto */
+    background-color: rgba(34, 52, 62, 0.5); /* Fondo transparente */
+    transition: opacity 0.3s ease;
+    padding: 10px;
+  }
+  
+  .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%; /* Ancho del contenedor de texto */
+    margin: auto;
+  }
+  
+  .portfolio-item:hover .img-fluid {
+    opacity: 0; /* Opacidad reducida al pasar el ratón */
+  }
+  
+  .portfolio-item:hover .portfolio-hover {
+    opacity: 1; /* Mostrar al pasar el ratón */
+  }
+
+  .explanation_portfolio{
+    font-size: 15px; /* Tamaño de la fuente de la explicación */
+    margin-bottom: 10px; /* Espacio entre las explicaciones */
   }
 
   /* ------------------------------------------------------------------------------------------------------------------- */

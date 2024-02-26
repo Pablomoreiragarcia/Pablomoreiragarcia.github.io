@@ -151,7 +151,7 @@
       <br>
       <ul class="row_curriculum">
 
-        <li class="row_curriculum_item openModalBtn js-scroll-trigger">
+        <li class="row_curriculum_item modal_item openModalBtn js-scroll-trigger">
           <a data-toggle="modal" href="#Studies">
             <div class="circle">
               <i class="fa fa-book"></i>
@@ -163,7 +163,7 @@
           <p></p>
         </li>
 
-        <li class="row_curriculum_item openModalBtn js-scroll-trigger">
+        <li class="row_curriculum_item modal_item openModalBtn js-scroll-trigger">
           <a data-toggle="modal" href="#Skills">
             <div class="circle">
               <i class="fa fa-cogs"></i>
@@ -175,7 +175,7 @@
           <p></p>
         </li>
 
-        <li class="row_curriculum_item openModalBtn js-scroll-trigger">
+        <li class="row_curriculum_item modal_item openModalBtn js-scroll-trigger">
           <a data-toggle="modal" href="#Experience">
             <div class="circle">
               <i class="fa fa-briefcase"></i>
@@ -227,7 +227,7 @@
         </ul>
       </div>
       <li class="closeModalBtn">
-        <a href="#Curriculum">
+        <a href="#curriculum">
           <div class="circle">
             <i class="fa fa-close"></i>
           </div>
@@ -269,7 +269,7 @@
         </ul>
       </div>
       <li class="closeModalBtn">
-        <a href="#Curriculum">
+        <a href="#curriculum">
           <div class="circle">
             <i class="fa fa-close"></i>
           </div>
@@ -303,7 +303,7 @@
         </ul>
       </div>
       <li class="closeModalBtn">
-        <a href="#Curriculum">
+        <a href="#curriculum">
           <div class="circle">
             <i class="fa fa-close"></i>
           </div>
@@ -375,12 +375,176 @@
               <p style="max-width: 500px;  line-height: 27px;" class="section-subheading text-muted">Projects I have
                 been working on.</p>
             </center>
+            <br><br>
+            
+            
+
+            
+            <ul id="portfolio-items" class="row">
+
+              <li class="col-md-3 col-sm-6 portfolio-item modal_item column openModalBtn js-scroll-trigger">
+                <a class="portfolio-link " data-toggle="modal" href="#WinePrediction">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <p>La Viña Wine Prediction</p>
+                      <p class="explanation_portfolio">Create a model for the prediction of the production of a campaign months before the harvest.<br></p>
+                    </div>
+                  </div>
+                  <img class="img-fluid img-overlay" src="files/silhouette-icon-of-a-bunch-of-grapes-with-oval-green-berries-vector-removebg-preview.png" alt="">
+                </a>
+              </li>
+              
+              
+
+
+              <li class="col-md-3 col-sm-6 portfolio-item modal_item column openModalBtn js-scroll-trigger">
+                <a class="portfolio-link" data-toggle="modal" href="#Injuries">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <p>Prediction of injuries</p>
+                      <p class="explanation_portfolio">Study and use of WEKA + ScikitLearn + SHAP values packages in the prediction of injuries in indoor soccer players.<br></p>
+                    </div>
+                  </div>
+                  <img class="img-fluid img-overlay" src="files/png-transparent-injury-encapsulated-postscript-others-microphone-logo-accident-removebg-preview.png" alt="">
+                </a>
+              </li>
+              <!--
+              <div class="col-md-3 col-sm-6 portfolio-item column">
+                <a class="portfolio-link" data-toggle="modal" href="#winePrediction">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <p>Credit Card Fraud</p>
+                      <p class="explanation_portfolio">Deal with imbalance data and generare a good credit fraud detector.<br></p>
+                    </div>
+                  </div>
+                  <img class="img-fluid img-overlay" src="files/FINAL_Heatmap3.png" alt="">
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6 portfolio-item column">
+                <a class="portfolio-link" data-toggle="modal" href="#winePrediction">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <p>Facial Expressions Detection</p>
+                      <p class="explanation_portfolio">Sentiment detection on the face of different people<br></p>
+                    </div>
+                  </div>
+                  <img class="img-fluid img-overlay" src="files/FINAL_Heatmap3.png" alt="">
+                </a>
+              </div>
+            -->
+            </ul>
           </div>
         </div>
         <br><br>
       </div>
     </div>
   </section>
+  <center>
+    <dialog id="modalWinePrediction">
+      <h4>La Viña Wine Prediction</h4>
+      <p style="max-width: 600px; font-size: 1.2rem;">Caja Mar UniversityHack Datathon 2023 / Master Final Work</p>
+      <div style="text-align: left">
+        <h6>Description:</h6>
+        <hr>
+        <h10>
+             Spain is the third largest wine producer in the world. Having an accurate forecast of the production in an agricultural campaign is increasingly necessary in order to optimise all the processes in the chain: harvesting, transfer, processing, storage and distribution.<br><br>
+             Given the above and based on extensive data sets with historical production data from the vineyards that make up the La Viña cooperative, as well as historical weather data, the objective will be to create the best production prediction model for a campaign based on the on the basis of which it will be possible to estimate the harvest that the cooperative will have months before the harvest.
+        </h10>
+      </div>
+      <br>
+      <br>
+      <div >
+        <ul class="modal_portfolio-buttons">
+          <li class="modal_portfolio-buttons_item">
+            <a href="projects/Wine Prediction/TFM_Pablo Moreira_Garcia.pdf" target="_blank" rel="noopener noreferrer" download>
+              <div class="circle">
+                <i class="fa fa-file-pdf-o"></i>
+              </div>
+            </a>
+          </li>
+          <li class="modal_portfolio-buttons_item">
+            <a href="https://github.com/Pablomoreiragarcia/TFM_CIDAEN" target="_blank" rel="noopener noreferrer">
+              <div class="circle">
+                <i class="fa fa-github"></i>
+              </div>
+            </a>
+          </li>
+          <li class="modal_portfolio-buttons_item">
+            <a href="projects/Wine Prediction/TFM_Presentation.pptx" target="_blank" rel="noopener noreferrer" download>
+              <div class="circle">
+                <i class="fa fa-file-powerpoint-o"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <ul>
+        <li class="closeModalBtn">
+          <a href="#portfolio">
+            <div class="circle">
+              <i class="fa fa-close"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </dialog>
+  </center>
+  <center>
+    <dialog id="modalInjuries">
+      <h4>Prediction of injuries</h4>
+      <p style="max-width: 600px; font-size: 1.2rem;">Degree Final Work</p>
+      <div style="text-align: left">
+        <h6>Description:</h6>
+        <hr>
+        <h10>
+          The main objective of this project is the development of Python code for the construction of a module that allows us to integrate the available algorithms and models developed in WEKA under the Scikit-Learn approach and their use, in this case, for the analysis of real databases on indoor football players and the prediction of a possible injury.<br><br>
+          This will be coded in one or more Jupyter notebooks, in which different methods will be implemented for loading, processing and visualisation of the different types of data.<br><br>
+          The models developed thanks to Python-Weka-Wrapper3 will implement different techniques used for unbalancing. Finally, it will be shown how these models have worked thanks to libraries designed for explainability in artificial intelligence such as SHAP.
+        </h10>
+      </div>
+      <br>
+      <br>
+      <div >
+        <ul class="modal_portfolio-buttons">
+          <li class="modal_portfolio-buttons_item">
+            <a href="projects/Injuries Prediction/TFG_Pablo_Moreira_Garcia.pdf" target="_blank" rel="noopener noreferrer" download>
+              <div class="circle">
+                <i class="fa fa-file-pdf-o"></i>
+              </div>
+            </a>
+          </li>
+          <li class="modal_portfolio-buttons_item">
+            <a href="https://github.com/Pablomoreiragarcia/TFG" target="_blank" rel="noopener noreferrer">
+              <div class="circle">
+                <i class="fa fa-github"></i>
+              </div>
+            </a>
+          </li>
+          <li class="modal_portfolio-buttons_item">
+            <a href="projects/Injuries Prediction/TFG_Presentation.pptx" target="_blank" rel="noopener noreferrer" download>
+              <div class="circle">
+                <i class="fa fa-file-powerpoint-o"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <ul>
+        <li class="closeModalBtn">
+          <a href="#portfolio">
+            <div class="circle">
+              <i class="fa fa-close"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </dialog>
+  </center>
   <!-- --------------------------------------------------------------------------------------------------------------------->
   <!-- CONTACT -->
   <!-- --------------------------------------------------------------------------------------------------------------------->
