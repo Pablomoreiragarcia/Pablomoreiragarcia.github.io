@@ -2,9 +2,12 @@
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
     position: relative;
+    font-size: 16px;           /* tamaño base */
+    line-height: 1.5;
   }
+
   p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;         /* más razonable */
   }
    
   .hidden {
@@ -45,7 +48,10 @@
   }
 
 
-  @media (min-width: 991px){
+  @media (min-width: 992px){
+     p {
+      font-size: 1.25rem;      /* algo más grande en pantallas grandes */
+    }
     #mainNav .nav-item .active{
     color: #67dcff;
     font-weight: 500;
@@ -297,7 +303,7 @@
   /* MODALS
   /* ------------------------------------------------------------------------------------------------------------------- */  
   /*-Studies-*/
-  .modalStudies::backdrop{
+  #modalStudies::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
   #modalStudies a {
@@ -344,7 +350,7 @@
     transform: scale(1.1);
   }
   /*-Skills-*/
-  .modalSkills::backdrop{
+  #modalSkills::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
   #modalSkills a {
@@ -391,7 +397,7 @@
     transform: scale(1.1);
   }
   /*-Experience-*/
-  .modalExperience::backdrop{
+  #modalExperience::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
   #modalExperience a {
@@ -438,7 +444,7 @@
     transform: scale(1.1);
   }
   /*-Wine-*/
-  .modalWinePrediction::backdrop{
+  #modalWinePrediction::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
   #modalWinePrediction a {
@@ -485,7 +491,7 @@
     transform: scale(1.1);
   }
   /*-Injuries-*/
-  .modalInjuries::backdrop{
+  #modalInjuries::backdrop{
     color:rgba(0, 0, 0, 0.55)
   }
   #modalInjuries a {
@@ -616,14 +622,16 @@
   #references .cards{
     position: relative;
     height: 500px;
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     margin-bottom: 20px;
     perspective: 1000px;
     transform-style: preserve-3d;
   }
   #references .cards label{
     position: absolute;
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     left: 0;
     right: 0;
     margin: auto;
@@ -719,6 +727,15 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
     transform: translate3d(70%, 0, -220px);
   }
+  @media (max-width: 600px) {
+    #references .cards {
+      height: auto;
+    }
+    #references .cards .card {
+      height: auto;
+      min-height: 420px;
+    }
+  }
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* PORTFOLIO
   /* ------------------------------------------------------------------------------------------------------------------- */
@@ -742,13 +759,13 @@
     display: flex; /* Activa el modelo de caja flexible */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila */
     justify-content: center ; /* Distribuye el espacio restante entre los elementos */
-    gap: 10px;
+    gap: 24px;
   }
   .portfolio-item {
     position: relative;
     overflow: hidden;
-    width: 25%; /* Ajusta el ancho de cada elemento */
-    float: left; /* Hace que los elementos floten hacia la izquierda */
+    flex: 1 1 260px;    /* base width */
+    max-width: 320px;   /* que no crezcan infinito en pantallas grandes */
     box-sizing: border-box;
   }
 
@@ -864,7 +881,7 @@
     color: white;
     font-size: 24px;
   }
-  #curriculum .row_curriculum .row_curriculum_item:hover a{
+  #contact .row_contact .row_contact_item:hover a{
     color: #67dcff;
     transform: scale(1.1);
   }
@@ -875,6 +892,24 @@
   #contact .row_contact .row_contact_item:hover .circle .fa {
     color: rgb(0, 0, 0);
     transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
+    #curriculum .row_curriculum,
+    #contact .row_contact,
+    .modal_portfolio-buttons,
+    #home .inicio_social-buttons {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    #curriculum .row_curriculum .row_curriculum_item .circle,
+    #curriculum .descarga_button .circle,
+    #contact .row_contact .row_contact_item .circle,
+    .modal_portfolio-buttons .modal_portfolio-buttons_item .circle,
+    #home .inicio_social-buttons .inicio_social-buttons_item .circle {
+      width: 80px;
+      height: 80px;
+    }
   }
   /* ------------------------------------------------------------------------------------------------------------------- */
   /* FOOTER
