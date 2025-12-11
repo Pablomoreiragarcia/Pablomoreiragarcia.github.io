@@ -537,6 +537,53 @@
     color: rgb(0, 0, 0);
     transform: scale(1.1);
   }
+  /*-CreditFraud-*/
+  #modalCreditFraud::backdrop{
+    color:rgba(0, 0, 0, 0.55)
+  }
+  #modalCreditFraud a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #modalCreditFraud u{
+    color: #67dcff;
+  }
+  #modalCreditFraud .closeModalBtn{
+    color: #67dcff;
+  }
+  #modalCreditFraud .closeModalBtn{
+    display: inline-block;
+  }
+  #modalCreditFraud .closeModalBtn a {
+    transition: color 0.3s;
+  }
+  #modalCreditFraud .closeModalBtn .circle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    text-align: center;
+  }
+  #modalCreditFraud .closeModalBtn .circle .fa {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 24px;
+  }
+  #modalCreditFraud .closeModalBtn:hover .circle {
+    background-color: #67dcff;
+    transform: scale(1.1);
+  }
+  #modalCreditFraud .closeModalBtn:hover .circle .fa {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+  }
   /*Modal Buttons*/
   .modal_portfolio-buttons {
     display: flex;
